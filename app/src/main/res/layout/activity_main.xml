@@ -61,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:text="@string/text_stop_timer" />
+            android:text="@string/text_reset_timer" />
 
     </LinearLayout>
 
@@ -182,6 +182,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/button_layoutmargin"
         android:onClick="reset"
+        android:padding="16dp"
         android:text="@string/button_reset" />
 
 </RelativeLayout>

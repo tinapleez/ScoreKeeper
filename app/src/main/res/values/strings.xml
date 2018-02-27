@@ -30,9 +30,9 @@
     <string name="button_6_letters">6 Letters</string>
     <string name="button_7_letters">7 Letters</string>
     <string name="button_8_letters">8+ Letters</string>
-    <string name="button_reset">Reset</string>
+    <string name="button_reset">Reset Scores</string>
     <string name="text_how_to_play">How to Play Boggle</string>
     <string name="text_start_timer">Start Timer</string>
-    <string name="text_stop_timer">Stop Timer</string>
+    <string name="text_reset_timer">Reset Timer</string>
 </resources>
 
