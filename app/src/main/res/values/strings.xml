@@ -1,0 +1,38 @@
+<!--
+  ~ Copyright (c) 2018. Tina Taylor
+  ~
+  ~ Creative Commons Attribution License 3.0
+  ~
+  ~ You are free to:
+  ~ Share — copy and redistribute the material in any medium or format
+  ~ Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+  ~ This license is acceptable for Free Cultural Works.
+  ~ The licensor cannot revoke these freedoms as long as you follow the license terms.
+  ~
+  ~ Under the following terms:
+  ~ Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+  ~
+  ~ No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+  ~
+  ~ See full license here: https://creativecommons.org/licenses/by/3.0/us/legalcode
+  -->
+
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="text_game_title">Boggle Score Keeper</string>
+    <string name="text_player_1">Player 1</string>
+    <string name="text_score_p1">0</string>
+    <string name="text_player_2">Player 2</string>
+    <string name="text_score_p2">0</string>
+    <string name="button_3_letters">3 Letters</string>
+    <string name="button_4_letters">4 Letters</string>
+    <string name="button_5_letters">5 Letters</string>
+    <string name="button_6_letters">6 Letters</string>
+    <string name="button_7_letters">7 Letters</string>
+    <string name="button_8_letters">8+ Letters</string>
+    <string name="button_reset">Reset</string>
+    <string name="text_how_to_play">How to Play Boggle</string>
+    <string name="text_start_timer">Start Timer</string>
+    <string name="text_stop_timer">Stop Timer</string>
+</resources>
+

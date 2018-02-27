@@ -1,0 +1,65 @@
+<!--
+  ~ Copyright (c) 2018. Tina Taylor
+  ~
+  ~ Creative Commons Attribution License 3.0
+  ~
+  ~ You are free to:
+  ~ Share — copy and redistribute the material in any medium or format
+  ~ Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+  ~ This license is acceptable for Free Cultural Works.
+  ~ The licensor cannot revoke these freedoms as long as you follow the license terms.
+  ~
+  ~ Under the following terms:
+  ~ Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+  ~
+  ~ No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+  ~
+  ~ See full license here: https://creativecommons.org/licenses/by/3.0/us/legalcode
+  -->
+
+<resources>
+
+    <!-- Base application theme. Commented out to test new code to Color buttons
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> -->
+    <!-- Customize your theme here.
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+</style>  -->
+
+    <!-- Color buttons -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary theme color of the app (sets background color of app bar) -->
+        <item name="colorPrimary">#FF9800</item>
+        <!-- Background color of buttons in the app -->
+        <item name="colorButtonNormal">#FF9800</item>
+    </style>
+
+    <!-- Team TextViews styles -->
+    <style name="GameText" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#616161</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <!-- Score numeral display styles  -->
+    <style name="ScoreDisplays" parent="Theme.AppCompat.Light">
+        <item name="android:textSize">56sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:layout_marginBottom">24dp</item>
+    </style>
+
+    <!-- Score button styles -->
+    <style name="ScoreButtons" parent="Theme.AppCompat.Light">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">24dp</item>
+        <item name="android:layout_marginRight">24dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+
+</resources>
