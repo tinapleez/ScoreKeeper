@@ -19,7 +19,7 @@
   -->
 
 <resources>
-    <dimen name="text_teampadding">4dp</dimen>
-    <dimen name="text_scorepadding">4dp</dimen>
-    <dimen name="button_layoutmargin">24dp</dimen>
+    <dimen name="text_playerpadding">4dp</dimen>
+    <dimen name="text_scorepadding">1dp</dimen>
+    <dimen name="button_layoutmargin">8dp</dimen>
 </resources>

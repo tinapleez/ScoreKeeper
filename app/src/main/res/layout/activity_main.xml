@@ -22,16 +22,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#ffe7ff">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="1dp"
         android:padding="8dp"
-        android:text="@string/text_game_title" />
+        android:text="@string/text_game_title"
+        android:textSize="16sp"
+        android:textColor="@android:color/holo_green_dark"/>
 
     <!-- This section is for the timer -->
     <LinearLayout
@@ -39,9 +42,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginBottom="1dp">
 
         <Button
+            android:id="@+id/button_start_pause"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
@@ -49,19 +54,23 @@
             android:text="@string/text_start_timer" />
 
         <TextView
+            android:id="@+id/text_view_countdown"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:padding="4dp"
-            android:text="3:00" />
+            android:padding="8dp"
+            android:text="@string/text_countdown_timer"
+            android:textColor="@android:color/black"
+            android:textSize="28sp" />
 
         <Button
+            android:id="@+id/button_reset"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:text="@string/text_reset_timer" />
+            android:text="@string/text_reset_timer"/>
 
     </LinearLayout>
 
@@ -84,7 +93,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/text_teampadding"
+                android:padding="@dimen/text_playerpadding"
                 android:text="@string/text_player_1" />
 
             <TextView
@@ -93,7 +102,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/text_scorepadding"
                 android:text="@string/text_score_p1" />
 
             <Button
@@ -102,6 +110,13 @@
                 android:layout_height="wrap_content"
                 android:onClick="addOneForPlayer1"
                 android:text="@string/button_3_letters" />
+
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOneForPlayer1"
+                android:text="@string/button_4_letters" />
 
             <Button
                 style="@style/ScoreButtons"
@@ -117,13 +132,27 @@
                 android:onClick="addThreeForPlayer1"
                 android:text="@string/button_6_letters" />
 
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFiveForPlayer1"
+                android:text="@string/button_7_letters" />
+
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addElevenForPlayer1"
+                android:text="@string/button_8_letters" />
+
         </LinearLayout>
 
         <!-- This is the line down the middle -->
         <View
             android:layout_width="1dp"
             android:layout_height="match_parent"
-            android:background="@android:color/darker_gray" />
+            android:background="@android:color/holo_green_dark" />
 
         <!-- This section is on the right side of the screen -->
         <LinearLayout
@@ -137,7 +166,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/text_teampadding"
+                android:padding="@dimen/text_playerpadding"
                 android:text="@string/text_player_2" />
 
             <TextView
@@ -146,7 +175,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:padding="@dimen/text_scorepadding"
                 android:text="@string/text_score_p2" />
 
             <Button
@@ -155,6 +183,13 @@
                 android:layout_height="wrap_content"
                 android:onClick="addOneForPlayer2"
                 android:text="@string/button_3_letters" />
+
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addOneForPlayer2"
+                android:text="@string/button_4_letters" />
 
             <Button
                 style="@style/ScoreButtons"
@@ -170,6 +205,20 @@
                 android:onClick="addThreeForPlayer2"
                 android:text="@string/button_6_letters" />
 
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addFiveForPlayer2"
+                android:text="@string/button_7_letters" />
+
+            <Button
+                style="@style/ScoreButtons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="addElevenForPlayer2"
+                android:text="@string/button_8_letters" />
+
         </LinearLayout>
 
     </LinearLayout>
@@ -182,7 +231,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="@dimen/button_layoutmargin"
         android:onClick="reset"
-        android:padding="16dp"
         android:text="@string/button_reset" />
 
 </RelativeLayout>

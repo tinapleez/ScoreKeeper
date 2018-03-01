@@ -34,5 +34,7 @@
     <string name="text_how_to_play">How to Play Boggle</string>
     <string name="text_start_timer">Start Timer</string>
     <string name="text_reset_timer">Reset Timer</string>
+    <string name="text_pause_timer">pause</string>
+    <string name="text_countdown_timer">3:00</string>
 </resources>
 
