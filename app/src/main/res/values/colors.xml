@@ -22,4 +22,14 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="layoutBackground">#d3d3ff</color>
+    <color name="titleColor">#008543</color>
+    <color name="button_start_background">#74e700</color>
+    <color name="button_reset_background">#00e774</color>
+    <color name="button_3_letters_background">#b400b4</color>
+    <color name="button_4_letters_background">#ce00ce</color>
+    <color name="button_5_letters_background">#de09de</color>
+    <color name="button_6_letters_background">#e700e7</color>
+    <color name="button_7_letters_background">#ff359a</color>
+    <color name="button_8_letters_background">#fb007e</color>
 </resources>

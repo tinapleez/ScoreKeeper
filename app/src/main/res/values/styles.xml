@@ -18,20 +18,11 @@
   -->
 
 <resources>
-
-    <!-- Base application theme. Commented out to test new code to Color buttons
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar"> -->
-    <!-- Customize your theme here.
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
     <item name="colorAccent">@color/colorAccent</item>
-</style>  -->
-
-    <!-- Color buttons -->
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#FF9800</item>
+        <item name="colorPrimary">#0000e7</item>
         <!-- Background color of buttons in the app -->
         <item name="colorButtonNormal">#00e700</item>
     </style>
@@ -57,9 +48,7 @@
         <item name="android:layout_marginLeft">16dp</item>
         <item name="android:layout_marginRight">16dp</item>
         <item name="android:textAllCaps">true</item>
-        <item name="android:layout_marginBottom">1dp</item>
-        <item name="android:textColor">#00e7e7</item>
+        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:textColor">#000000</item>
     </style>
-
-
 </resources>

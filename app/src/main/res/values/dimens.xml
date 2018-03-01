@@ -21,5 +21,17 @@
 <resources>
     <dimen name="text_playerpadding">4dp</dimen>
     <dimen name="text_scorepadding">1dp</dimen>
-    <dimen name="button_layoutmargin">8dp</dimen>
+    <dimen name="button_layoutmargin">16dp</dimen>
+    <dimen name="text_title_padding">8dp</dimen>
+    <dimen name="text_title_size">16sp</dimen>
+    <dimen name="timer_layout_margin">1dp</dimen>
+    <dimen name="button_layout_width">0dp</dimen>
+    <dimen name="button_start_layout_marginleft">16dp</dimen>
+    <dimen name="button_start_paddingleft">4dp</dimen>
+    <dimen name="button_start_paddingright">4dp</dimen>
+    <dimen name="text_countdown_padding">8dp</dimen>
+    <dimen name="text_countdown_size">28sp</dimen>
+    <dimen name="button_reset_layout_marginright">16dp</dimen>
+    <dimen name="button_reset_paddingleft">4dp</dimen>
+    <dimen name="button_reset_paddingright">4dp</dimen>
 </resources>
