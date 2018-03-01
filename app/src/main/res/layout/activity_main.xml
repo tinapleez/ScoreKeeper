@@ -30,11 +30,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="1dp"
-        android:padding="8dp"
+        android:paddingTop="8dp"
         android:text="@string/text_game_title"
-        android:textSize="16sp"
-        android:textColor="@android:color/holo_green_dark"/>
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="16sp" />
 
     <!-- This section is for the timer -->
     <LinearLayout
@@ -42,8 +41,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/title"
-        android:orientation="horizontal"
-        android:layout_marginBottom="1dp">
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/button_start_pause"
@@ -51,6 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_weight="1"
+            android:background="#74e700"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
             android:text="@string/text_start_timer" />
 
         <TextView
@@ -70,7 +72,10 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:layout_weight="1"
-            android:text="@string/text_reset_timer"/>
+            android:background="#00e774"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="@string/text_reset_timer" />
 
     </LinearLayout>
 
@@ -89,7 +94,7 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/GameText"
+                style="@style/PlayerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -108,6 +113,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#b400b4"
                 android:onClick="addOneForPlayer1"
                 android:text="@string/button_3_letters" />
 
@@ -115,6 +121,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ce00ce"
                 android:onClick="addOneForPlayer1"
                 android:text="@string/button_4_letters" />
 
@@ -122,6 +129,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#de09de"
                 android:onClick="addTwoForPlayer1"
                 android:text="@string/button_5_letters" />
 
@@ -129,6 +137,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#e700e7"
                 android:onClick="addThreeForPlayer1"
                 android:text="@string/button_6_letters" />
 
@@ -136,6 +145,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ff359a"
                 android:onClick="addFiveForPlayer1"
                 android:text="@string/button_7_letters" />
 
@@ -143,6 +153,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#fb007e"
                 android:onClick="addElevenForPlayer1"
                 android:text="@string/button_8_letters" />
 
@@ -162,7 +173,7 @@
             android:orientation="vertical">
 
             <TextView
-                style="@style/GameText"
+                style="@style/PlayerText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
@@ -181,6 +192,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#b400b4"
                 android:onClick="addOneForPlayer2"
                 android:text="@string/button_3_letters" />
 
@@ -188,6 +200,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ce00ce"
                 android:onClick="addOneForPlayer2"
                 android:text="@string/button_4_letters" />
 
@@ -195,6 +208,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#de09de"
                 android:onClick="addTwoForPlayer2"
                 android:text="@string/button_5_letters" />
 
@@ -202,6 +216,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#e700e7"
                 android:onClick="addThreeForPlayer2"
                 android:text="@string/button_6_letters" />
 
@@ -209,6 +224,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#ff359a"
                 android:onClick="addFiveForPlayer2"
                 android:text="@string/button_7_letters" />
 
@@ -216,6 +232,7 @@
                 style="@style/ScoreButtons"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:background="#fb007e"
                 android:onClick="addElevenForPlayer2"
                 android:text="@string/button_8_letters" />
 
