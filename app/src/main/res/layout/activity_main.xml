@@ -20,7 +20,6 @@
   -->
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/layoutBackground">
@@ -49,6 +48,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/button_start_layout_marginleft"
+            android:layout_marginStart="@dimen/button_start_layout_marginleft"
             android:layout_weight="1"
             android:background="@color/button_start_background"
             android:paddingLeft="@dimen/button_start_paddingleft"
