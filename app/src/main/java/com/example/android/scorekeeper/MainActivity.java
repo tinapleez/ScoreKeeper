@@ -16,7 +16,7 @@
  *
  * See full license here: https://creativecommons.org/licenses/by/3.0/us/legalcode
  */
-/** Countdown timer code copied from https://codinginflow.com/code-examples/android/countdown-timer/part-1
+/* Countdown timer code copied from https://codinginflow.com/code-examples/android/countdown-timer/part-1
  * Attribution given to Florian */
 package com.example.android.scorekeeper;
 
@@ -36,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
+    private TextView player1Score;
+    private TextView player2Score;
     // Declare score variables for Players
     int scorePlayer1 = 0;
     int scorePlayer2 = 0;
@@ -44,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        player1Score = findViewById(R.id.player_1_score);
+        player1Score.setText(R.string.text_score_p1);
+        player2Score = findViewById(R.id.player_2_score);
+        player2Score.setText(R.string.text_score_p2);
+
         displayPlayer1(0);
         displayPlayer2(0);
 
@@ -122,24 +129,28 @@ public class MainActivity extends AppCompatActivity {
         scorePlayer1 = scorePlayer1 + 1;
         displayPlayer1(scorePlayer1);
     }
+
     /**
      * Increase the score for Player 1 by 2 points.     */
     public void addTwoForPlayer1(View v) {
         scorePlayer1 = scorePlayer1 + 2;
         displayPlayer1(scorePlayer1);
     }
+
     /**
      * Increase the score for Player 1 by 3 points.     */
     public void addThreeForPlayer1(View v) {
         scorePlayer1 = scorePlayer1 + 3;
         displayPlayer1(scorePlayer1);
     }
+
     /**
      * Increase the score for Player 1 by 5 points.     */
     public void addFiveForPlayer1(View v) {
         scorePlayer1 = scorePlayer1 + 5;
         displayPlayer1(scorePlayer1);
     }
+
     /**
      * Increase the score for Player 1 by 11 points.     */
     public void addElevenForPlayer1(View v) {
@@ -153,24 +164,28 @@ public class MainActivity extends AppCompatActivity {
         scorePlayer2 = scorePlayer2 + 1;
         displayPlayer2(scorePlayer2);
     }
+
     /**
      * Increase the score for Player 2 by 2 points.     */
     public void addTwoForPlayer2(View v) {
         scorePlayer2 = scorePlayer2 + 2;
         displayPlayer2(scorePlayer2);
     }
+
     /**
      * Increase the score for Player 2 by 3 points.     */
     public void addThreeForPlayer2(View v) {
         scorePlayer2 = scorePlayer2 + 3;
         displayPlayer2(scorePlayer2);
     }
+
     /**
      * Increase the score for Player 2 by 5 points.     */
     public void addFiveForPlayer2(View v) {
         scorePlayer2 = scorePlayer2 + 5;
         displayPlayer2(scorePlayer2);
     }
+
     /**
      * Increase the score for Player 2 by 11 points.     */
     public void addElevenForPlayer2(View v) {
@@ -181,15 +196,15 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Player 1.     */
     public void displayPlayer1(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_1_score);
-        scoreView.setText(String.valueOf(score));
+        player1Score.setText(String.valueOf(score));
     }
+
     /**
      * Displays the given score for Player 2.     */
     public void displayPlayer2(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_2_score);
-        scoreView.setText(String.valueOf(score));
+        player2Score.setText(String.valueOf(score));
     }
+
     /**
      *  Resets the scores for Players 1 and 2 to zero     */
     public void reset(View v) {
