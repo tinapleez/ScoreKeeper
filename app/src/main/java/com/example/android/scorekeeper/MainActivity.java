@@ -36,8 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private CountDownTimer mCountDownTimer;
     private boolean mTimerRunning;
     private long mTimeLeftInMillis = START_TIME_IN_MILLIS;
-    private TextView player1Score;
-    private TextView player2Score;
+    private TextView player1ScoreView;
+    private TextView player2ScoreView;
     // Declare score variables for Players
     int scorePlayer1 = 0;
     int scorePlayer2 = 0;
@@ -46,10 +46,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        player1Score = findViewById(R.id.player_1_score);
-        player1Score.setText(R.string.text_score_p1);
-        player2Score = findViewById(R.id.player_2_score);
-        player2Score.setText(R.string.text_score_p2);
+        player1ScoreView = findViewById(R.id.player_1_score);
+        player1ScoreView.setText(R.string.text_score_p1);
+        player2ScoreView = findViewById(R.id.player_2_score);
+        player2ScoreView.setText(R.string.text_score_p2);
 
         displayPlayer1(0);
         displayPlayer2(0);
@@ -196,13 +196,13 @@ public class MainActivity extends AppCompatActivity {
     /**
      * Displays the given score for Player 1.     */
     public void displayPlayer1(int score) {
-        player1Score.setText(String.valueOf(score));
+        player1ScoreView.setText(String.valueOf(score));
     }
 
     /**
      * Displays the given score for Player 2.     */
     public void displayPlayer2(int score) {
-        player2Score.setText(String.valueOf(score));
+        player2ScoreView.setText(String.valueOf(score));
     }
 
     /**
